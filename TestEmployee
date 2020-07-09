@@ -1,0 +1,35 @@
+/**
+ * @(#)TestEmploye.java
+ *
+ *
+ * @author 
+ * @version 1.00 2020/7/9
+ */
+
+
+public class TestEmploye {
+    public static void main(String []args){
+    	Employee emp1 = new Employee("Xiao Ming", 5000.00);
+    	Employee emp2 = new Employee("Xiao Hua");
+    	emp2.setSalary(5600.00);
+    	
+    	if(emp1.getSalary()>emp2.getSalary()){
+            System.out.println(emp1.getName() + " " + emp1.getSalary());
+        }
+        else{
+            System.out.println(emp2.getName() + " " + emp2.getSalary());
+        }
+    	
+    	System.out.print("total : " + emp1.getSalary() + " + " + emp2.getSalary() + " = " + (emp1.getSalary() + emp2.getSalary()));  
+    	/*
+    	//System.out.println("Salary : " + emp1.salary);
+    	System.out.println("Salary : " + emp1.getSalary());
+    	emp1.raiseSalary(8.0);
+    		
+    	//System.out.println("Salary : " + emp1.salary);
+    	System.out.println("Salary : " + emp1.getSalary());
+    	*/
+    }
+    
+    
+}
